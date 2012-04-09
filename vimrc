@@ -38,6 +38,9 @@ set list
 set lcs=tab:»·    "Tabulations
 set lcs+=trail:·  "Trailing spaces
 
+" Allow modline in files
+set modeline
+
 " Function to enable/disable text wrapping.
 function ToggleWrap()
   if &wrap
