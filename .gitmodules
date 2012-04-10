@@ -10,9 +10,6 @@
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = https://github.com/vim-scripts/pydoc.vim.git
-[submodule "bundle/flake8"]
-	path = bundle/flake8
-	url = https://github.com/nvie/vim-flake8.git
 [submodule "bundle/rope"]
 	path = bundle/rope
 	url = https://github.com/klen/rope-vim.git
