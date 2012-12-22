@@ -13,13 +13,29 @@ set laststatus=2
 
 
 
+"""      """
+" Pathogen "
+"""      """
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+
+
 """                  """
 " Editor configuration "
 """                  """
 
 " Coloration.
 syntax on
-colorscheme BusyBee
+
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " Show line numbers.
 set number
@@ -29,6 +45,7 @@ highlight LineNr ctermfg=3
 set cursorline
 
 " Characters over the 80th column are highlighted.
+hi OverLength guifg=NONE guibg=#32322f gui=none ctermbg=236
 match OverLength '\%>80v.\+'
 " Automatic wrapping at the 80th character.
 set textwidth=80
@@ -157,14 +174,6 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 let g:SuperTabDefaultCompletionType = "context"
-
-
-"""      """
-" Pathogen "
-"""      """
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 
 
 """      """
