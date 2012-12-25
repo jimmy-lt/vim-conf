@@ -28,3 +28,6 @@
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/cfengine"]
+	path = bundle/cfengine
+	url = https://github.com/neilhwatson/vim_cf3.git

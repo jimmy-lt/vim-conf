@@ -88,6 +88,8 @@ endfunction
 highlight TabLine term=none cterm=none
 highlight TabLineSel ctermbg=darkblue
 
+" Force file types.
+au BufRead,BufNewFile *.cf set filetype=cf3
 
 
 """              """
